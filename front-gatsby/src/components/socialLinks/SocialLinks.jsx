@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 // social links icons
-import InstagramIcon from './InstagramIcon';
 import GithubIcon from './GithubIcon';
 import LinkedinIcon from './LinkedinIcon';
+import InstagramIcon from './InstagramIcon';
 
 export default function SocialLinks({
   links,
@@ -32,13 +32,13 @@ export default function SocialLinks({
   return (
     <SocialLinksStyles flexDirection={flexDirection} width={width}>
       <div className='social-link'>
-        <a href={linkedin}>
-          <LinkedinIcon color={color} hoverColor={hoverColor} />
+        <a href={github}>
+          <GithubIcon color={color} hoverColor={hoverColor} />
         </a>
       </div>
       <div className='social-link'>
-        <a href={github}>
-          <GithubIcon color={color} hoverColor={hoverColor} />
+        <a href={linkedin}>
+          <LinkedinIcon color={color} hoverColor={hoverColor} />
         </a>
       </div>
       <div className='social-link'>
