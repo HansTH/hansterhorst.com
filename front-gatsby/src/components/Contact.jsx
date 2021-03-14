@@ -159,7 +159,7 @@ const ContactStyles = styled.section`
 
   @media ${breakpoint.sm} {
     .contact {
-      margin: 2rem 0 0;
+      margin: 3rem 0 0;
     }
   }
 `;

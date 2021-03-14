@@ -6,22 +6,7 @@ import SocialLinks from '../socialLinks/SocialLinks';
 import MobileIcon from '../socialLinks/icons/MobileIcon';
 import EmailIcon from '../socialLinks/icons/EmailIcon';
 
-const socialLinks = [
-  {
-    name: 'GitHub',
-    url: 'https://github.com/HansTH',
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://nl.linkedin.com/in/hansth',
-  },
-  {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/hbhterhorst/',
-  },
-];
-
-export default function Footer() {
+export default function Footer({ socialLinks }) {
   return (
     <FooterStyles>
       <CurveDown fillColor='var(--dark-blue' />
@@ -34,11 +19,11 @@ export default function Footer() {
               </a>
               <div className='contact-text'>
                 <h6>Wil je liever bellen</h6>
-                <p>06 • 11 90 25 68</p>
+                <p>06 • 11902568</p>
               </div>
             </div>
             <div className='contact'>
-              <a href='mailto:info@hthmedia.nl'>
+              <a href='mailto:hbhorst@mac.com'>
                 <EmailIcon />
               </a>
               <div className='contact-text'>
@@ -95,7 +80,7 @@ const FooterStyles = styled.div`
       margin-left: 1rem;
       p {
         font-weight: 400;
-        color: var(--white) !important;
+        color: var(--white);
       }
     }
   }

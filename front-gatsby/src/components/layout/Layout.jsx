@@ -5,15 +5,30 @@ import SEO from '../SEO';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
+const socialLinks = [
+  {
+    name: 'GitHub',
+    url: 'https://github.com/HansTH',
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://nl.linkedin.com/in/hansth',
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/hbhterhorst/',
+  },
+];
+
 export default function Layout({ children }) {
   return (
     <>
       <SEO />
       <GlobalStyles />
       <FontStyles />
-      <Navbar />
+      <Navbar socialLinks={socialLinks} />
       <main>{children}</main>
-      <Footer />
+      <Footer socialLinks={socialLinks} />
     </>
   );
 }

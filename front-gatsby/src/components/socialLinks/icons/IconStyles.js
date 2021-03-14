@@ -6,12 +6,18 @@ const IconStyles = styled.svg`
 
   &:hover {
     path {
-      fill: white;
+      fill: ${({ color }) =>
+        color !== 'secondary' ? 'var(--white)' : 'var(--light-blue)'}; //white;
     }
 
     rect {
-      fill: var(--red);
-      stroke: var(--light-red);
+      /* fill: var(--red); */
+      fill: ${({ color }) =>
+        color !== 'secondary' ? 'var(--red)' : 'var(--dark-blue)'};
+
+      /* stroke: var(--light-red); */
+      stroke: ${({ color }) =>
+        color !== 'secondary' ? 'var(--light-red)' : 'var(--light-blue)'};
     }
   }
 `;

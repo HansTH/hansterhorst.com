@@ -68,7 +68,7 @@ const AboutStyles = styled.section`
   }
 
   @media ${breakpoint.sm} {
-    padding: 8rem 0 0;
+    padding: 10rem 0 0;
 
     .about {
       flex-direction: column;

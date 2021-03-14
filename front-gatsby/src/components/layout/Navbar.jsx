@@ -20,7 +20,7 @@ const navLinks = [
   },
 ];
 
-export default function Navbar() {
+export default function Navbar({ socialLinks }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   function toggleMenu() {
@@ -32,6 +32,7 @@ export default function Navbar() {
         isOpen={isMenuOpen}
         navLinks={navLinks}
         toggleMenu={toggleMenu}
+        socialLinks={socialLinks}
       />
       <NavbarStyles id='home'>
         <nav className='navbar'>

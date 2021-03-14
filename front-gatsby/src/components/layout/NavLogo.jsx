@@ -27,13 +27,16 @@ export default function NavLogo() {
 const NavLogoStyles = styled.div`
   padding: 1rem 0;
 
-  svg {
-    width: 200px;
+  a {
+    display: block;
+    height: 70px;
   }
 
   @media ${breakpoint.sm} {
-    img {
+    img,
+    a {
       width: 50px;
+      height: 50px;
     }
   }
 `;

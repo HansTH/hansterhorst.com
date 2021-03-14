@@ -1,8 +1,13 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-
-export default function MobileMenu({ isOpen, navLinks, toggleMenu }) {
+import SocialLinks from '../socialLinks/SocialLinks';
+export default function MobileMenu({
+  isOpen,
+  navLinks,
+  toggleMenu,
+  socialLinks,
+}) {
   return (
     <MobileMenuStyles isOpen={isOpen}>
       {navLinks &&
@@ -16,6 +21,9 @@ export default function MobileMenu({ isOpen, navLinks, toggleMenu }) {
             {link.title}
           </Link>
         ))}
+      <div className='social-links'>
+        <SocialLinks links={socialLinks} color='secondary' />
+      </div>
     </MobileMenuStyles>
   );
 }
