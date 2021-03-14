@@ -1,9 +1,9 @@
 import React from 'react';
-import SocialLinkStyles from './SocialLinkStyles';
+import IconStyles from './IconStyles';
 
-export default function LinkedinIcon() {
+export default function LinkedInIcon({ width }) {
   return (
-    <SocialLinkStyles width={42} height={42} viewBox='0 0 42 42'>
+    <IconStyles width={width} viewBox='0 0 42 42'>
       <title>{'linkedin'}</title>
       <g fill='none' fillRule='evenodd'>
         <path fill='#242E4C' d='M-661-144H779v295H-661z' />
@@ -21,6 +21,6 @@ export default function LinkedinIcon() {
           fill='#303E66'
         />
       </g>
-    </SocialLinkStyles>
+    </IconStyles>
   );
 }

@@ -29,7 +29,7 @@ export default function SEO({ children }) {
       <link
         rel='apple-touch-icon'
         type='image/png'
-        sizes='100x100'
+        sizes='144x144'
         href='/HTHlogo.png'
       />
       {/* Meta Tags */}

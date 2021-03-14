@@ -3,8 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import CurveDown from '../curves/CurveDown';
 import SocialLinks from '../socialLinks/SocialLinks';
-import MobileIcon from '../socialLinks/MobileIcon';
-import EmailIcon from '../socialLinks/EmailIcon';
+import MobileIcon from '../socialLinks/icons/MobileIcon';
+import EmailIcon from '../socialLinks/icons/EmailIcon';
 
 const socialLinks = [
   {
@@ -34,7 +34,7 @@ export default function Footer() {
               </a>
               <div className='contact-text'>
                 <h6>Wil je liever bellen</h6>
-                <p>06 11 90 25 68</p>
+                <p>06 • 11 90 25 68</p>
               </div>
             </div>
             <div className='contact'>

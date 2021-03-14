@@ -37,6 +37,9 @@ const PortfolioItemStyles = styled.div`
 
   .portfolio-image {
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .portfolio-text {

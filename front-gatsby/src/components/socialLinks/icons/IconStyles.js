@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-const SocialLinkStyles = styled.svg`
+const IconStyles = styled.svg`
+  width: ${({ width }) => width || '40px'};
+  height: ${({ width }) => width || '40px'};
+
   &:hover {
     path {
       fill: white;
@@ -13,4 +16,4 @@ const SocialLinkStyles = styled.svg`
   }
 `;
 
-export default SocialLinkStyles;
+export default IconStyles;

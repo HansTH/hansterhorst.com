@@ -20,7 +20,7 @@ export default function Portfolio() {
             description
             image {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED)
+                gatsbyImageData(height: 400, placeholder: BLURRED)
               }
             }
           }
@@ -55,9 +55,6 @@ export default function Portfolio() {
 
 const PortfolioStyled = styled.section`
   background-color: var(--blue);
-
-  .portfolio {
-  }
 
   .outline {
     outline: 2px solid var(--blue);
