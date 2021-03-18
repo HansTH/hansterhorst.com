@@ -1,5 +1,5 @@
 ---
-index: 4
+date: 2020-10
 project: Webapp
 title: Shopperr
 stack: ReactJS • MongoDB • ExpressJS • NodeJS • Heroku • MERNstack

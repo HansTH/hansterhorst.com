@@ -1,5 +1,5 @@
 ---
-index: 2
+date: 2021-03
 project: Website
 title: Owlfy
 stack: GatsbyJS • Sanity.io • Styled Components • Netlify • Sketch • JAMstack

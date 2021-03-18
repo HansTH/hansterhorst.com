@@ -1,5 +1,5 @@
 ---
-index: 3
+date: 2019-05
 project: Website
 title: RockBottom FishingStones
 stack: React • Styled Components • React Context • Sketch

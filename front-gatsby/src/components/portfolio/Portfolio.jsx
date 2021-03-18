@@ -9,10 +9,11 @@ export default function Portfolio() {
   const data = useStaticQuery(graphql`
     query PortfolioQuery {
       portfolio: allMarkdownRemark(
-        sort: { fields: frontmatter___index, order: ASC }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         nodes {
           frontmatter {
+            date
             project
             stack
             link
@@ -20,7 +21,7 @@ export default function Portfolio() {
             description
             image {
               childImageSharp {
-                gatsbyImageData(height: 400, placeholder: BLURRED)
+                gatsbyImageData(height: 400, placeholder: BLURRED, quality: 100)
               }
             }
           }
@@ -42,8 +43,8 @@ export default function Portfolio() {
             <h3>Portfolio</h3>
             <h2>Wat ik kan.</h2>
             <div className='portfolio'>
-              {projects.map((project, index) => (
-                <PortfolioItem data={project} key={index} />
+              {projects.map((project) => (
+                <PortfolioItem data={project} key={project.title} />
               ))}
             </div>
           </div>

@@ -1,5 +1,5 @@
 ---
-index: 1
+date: 2021-01
 project: Website
 title: Het Arendshuys
 stack: GatsbyJS • Sanity.io • Styled Components • Netlify Functions • Sketch • JAMstack
