@@ -8,7 +8,7 @@ import Navbar from './Navbar';
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/HansTH',
+    url: 'https://github.com/hansterhorst',
   },
   {
     name: 'LinkedIn',
